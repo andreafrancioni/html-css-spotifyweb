@@ -53,6 +53,10 @@ footer {
 
 }
 
+.footer-left .play-now{
+    height: 100%;
+}
+
 .footer-left img{
     height: 50%;
 }
