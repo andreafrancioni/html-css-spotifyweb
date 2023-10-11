@@ -1,14 +1,18 @@
+/* CUSTOM VARIABLE */
 :root {
     --footer-height: 90px;
     --navbar-width: 12rem;
 }
 
+
+/* CSS RESET */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* GENERAL CSS */
 body {
     font-family: sans-serif;
     height: 100vh;
@@ -18,20 +22,37 @@ body {
     flex-wrap: wrap;
 }
 
+
+/* NAV SECTION */
 nav {
     background: orange;
     height: calc(100% - var(--footer-height));
     width: var(--navbar-width);
 }
 
+/* MAIN SECTION */
 main {
     height: calc(100% - var(--footer-height));
     width: calc(100% - var(--navbar-width));
     background: teal;
 }
 
+
+/* FOOTER SECTION */
 footer {
     width: 100%;
     height: var(--footer-height);
     background: crimson;
+}
+
+
+.footer-left,
+.footer-center,
+.footer-right{
+    height: 100%;
+
+}
+
+.footer-left img{
+    height: 50%;
 }
