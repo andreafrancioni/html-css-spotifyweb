@@ -25,7 +25,7 @@ body {
 
 /* NAV SECTION */
 nav {
-    background: orange;
+    background: black;
     height: calc(100% - var(--footer-height));
     width: var(--navbar-width);
 }
@@ -34,7 +34,27 @@ nav {
 main {
     height: calc(100% - var(--footer-height));
     width: calc(100% - var(--navbar-width));
-    background: teal;
+    background: #141922;
+}
+
+/* UPGRADE BUTTON */
+.premium-banner{
+    width: calc(100% - var(--navbar-width)) ;
+    height: 100px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.178);
+}
+
+.premium-banner a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    border: solid 2px white;
+    border-radius: 2em;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
 }
 
 
