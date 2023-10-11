@@ -13,36 +13,53 @@
     <body>
         <nav>menu</nav>
         <main>contenuto</main>
+
+
+        <!-- FOOTER -->
         <footer class="d-flex flex-justify-between">
-            <div class="footer-left d-flex">
-                <div class="play-now">
-                    <img src="./img/sinister.jpeg" alt="play-now">
+
+            <!-- FOOTER LEFT -->
+            <div class="footer-left d-flex mx-16">
+                <div class="play-now d-flex">
+                    <div class="play-now-img d-flex flex-align-center">
+                        <img src="./img/sinister.jpeg" alt="play-now">
+                    </div>
+                    <div class="play-now-text d-flex flex-column flex-justify-center ml-8">
+                        <h5>Sinister</h5>
+                        <p>Brano nome</p>
+                    </div>
                 </div>
-                <div class="function-icon">
+                <div class="function-icon d-flex flex-align-center ml-32">
                     <a href="#"><i class="fa-regular fa-heart"></i></a>
                     <a href="#"><i class="fa-regular fa-folder"></i></a>
                 </div>
             </div>
-            <div class="footer-center">
-                <div class="media-playback">
-                    <a href="#"><i class="fa-solid fa-shuffle"></i></a>
-                    <a href="#"><i class="fa-solid fa-backward-step"></i></a>
-                    <a href="#"><i class="fa-regular fa-circle-play"></i></a>
-                    <a href="#"><i class="fa-solid fa-forward-step"></i></a>
-                    <a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a>
-                </div>
-                <div class="status-bar">
 
+            <!-- FOOTER CENTER -->
+            <div class="footer-center d-flex flex-column flex-align-center flex-justify-center mx-16">
+                <div class="media-playback d-flex flex-align-center">
+                    <a href="#"><i class="fa-solid fa-shuffle fa-1.5x"></i></a>
+                    <a href="#"><i class="fa-solid fa-backward-step fa-1.5x"></i></a>
+                    <a href="#"><i class="fa-regular fa-circle-play fa-2x"></i></a>
+                    <a href="#"><i class="fa-solid fa-forward-step fa-1.5x"></i></a>
+                    <a href="#"><i class="fa-solid fa-arrow-rotate-right fa-1.5x"></i></a>
+                </div>
+                <div id="status-bar" class="d-flex flex-align-center">
+                    <span>0:25</span>
+                    <div class="status mx-32"></div>
+                    <span>4:35</span>
                 </div>
             </div>
-            <div class="footer-right">
+
+            <!-- FOOTER RIGHT -->
+            <div class="footer-right d-flex flex-align-center mx-16">
                 <div class="function-icon">
                     <a href="#"><i class="fas fa-list"></i></a>
                     <a href="#"><i class="fas fa-desktop"></i></a>
                     <a href="#"><i class="fas fa-volume-high"></i></a>
                 </div>
-                <div class="volume-bar">
-
+                <div id="volume-bar">
+                    <div class="volume"></div>
                 </div>
             </div>
         </footer>

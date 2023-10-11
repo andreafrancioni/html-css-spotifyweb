@@ -1,7 +1,7 @@
 /* CUSTOM VARIABLE */
 :root {
     --footer-height: 90px;
-    --navbar-width: 12rem;
+    --navbar-width: 15rem;
 }
 
 
@@ -42,21 +42,67 @@ main {
 footer {
     width: 100%;
     height: var(--footer-height);
-    background: crimson;
+    background: #57575777;
+    color: white;
+}
+
+footer i{
+    color: white;
 }
 
 
 .footer-left,
 .footer-center,
-.footer-right{
+.footer-right,
+.play-now,
+.play-now-img,
+.play-now-text{
     height: 100%;
 
 }
 
-.footer-left .play-now{
-    height: 100%;
+/* FOOTER LEFT */
+.play-now-text h5{
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.play-now-text p{
+    font-size: 0.6rem;
+    font-weight: 800;
+    opacity: 80%;
 }
 
 .footer-left img{
     height: 50%;
+}
+
+.footer-left a{
+    margin-left: 8px;
+}
+
+
+/* FOOTER CENTER */
+
+.media-playback{
+    gap: 2rem;
+}
+
+.status{
+    height: 5px;
+	width: 300px;
+	background: linear-gradient(90deg, rgba(153,153,153,1) 35%, rgba(78,78,78,1) 35%);
+	border-radius: 15px;
+}
+
+.volume{
+    height: 5px;
+	width: 100px;
+	background: linear-gradient(90deg, rgba(153,153,153,1) 35%, rgba(78,78,78,1) 35%);
+	border-radius: 15px;
+}
+
+/* FOOTER RIGHT */
+.footer-right a{
+    margin-right: 8px;
 }
