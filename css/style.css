@@ -42,6 +42,18 @@ main {
     overflow-y: auto;
 }
 
+/* NAV SECTION */
+.logo{
+    width: 100%;
+    height: 100px;
+    padding: 32px;
+}
+
+.menu img{
+    width: 25px;
+}
+
+
 /* UPGRADE BUTTON */
 .premium-banner{
     width: calc(100% - var(--navbar-width)) ;
@@ -159,7 +171,7 @@ main {
 footer {
     width: 100%;
     height: var(--footer-height);
-    background: #282828
+    background: #282828;
     color: white;
 }
 
