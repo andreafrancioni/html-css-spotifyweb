@@ -80,16 +80,20 @@ main {
     border-bottom: 2px solid greenyellow;
 }
 
+/* RECENTLY TRACKS */
+
+
+
 /* TRACKS CSS */
 .tracks{
-    margin-left: 16px;
-    margin-top: 32px;
+    margin: 16px 32px;
+    width: calc(100% - --navbar-width);
 }
 
 .tracks ul{
     list-style-type: none;
     text-align: center;
-    padding-right: 16px;
+    padding-right: 32px;
 }
 
 .tracks li{
@@ -97,7 +101,35 @@ main {
 }
 
 .tracks .img-track img{
-    max-width: 180px;
+    max-width: 200px;
+}
+
+.tracks .img-track{
+    position: relative;
+}
+
+.tracks .img-hover{
+    display: flex;
+    position: absolute;
+    align-items: center;
+}
+
+.tracks .img-hover i{
+    display: none;
+    position: absolute;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.img-track:hover .img-hover{
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 100%;
+    height: 200px;
+}
+
+.img-track:hover .img-hover i{
+    display: block;
 }
 
 .tracks .title a{
@@ -127,7 +159,7 @@ main {
 footer {
     width: 100%;
     height: var(--footer-height);
-    background: #474747;
+    background: #282828
     color: white;
 }
 
