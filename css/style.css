@@ -22,6 +22,10 @@ body {
     flex-wrap: wrap;
 }
 
+a{
+    text-decoration: none;
+}
+
 
 /* NAV SECTION */
 nav {
@@ -35,6 +39,7 @@ main {
     height: calc(100% - var(--footer-height));
     width: calc(100% - var(--navbar-width));
     background: #141922;
+    overflow-y: auto;
 }
 
 /* UPGRADE BUTTON */
@@ -46,7 +51,6 @@ main {
 }
 
 .premium-banner a{
-    text-decoration: none;
     color: white;
     font-size: 1em;
     border: solid 2px white;
@@ -54,15 +58,76 @@ main {
     padding: 10px;
     position: absolute;
     top: 20px;
-    right: 10px;
+    right: 20px;
 }
 
+/* SPOTIFY CATEGORIES CSS */
+.categories{
+    margin-top: 100px;
+    width: 100%;
+    height: 50px;
+    background-color: #141922;
+}
+
+.categories a{
+    color: rgb(175, 175, 175);
+    padding: 16px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.categories a:hover{
+    border-bottom: 2px solid greenyellow;
+}
+
+/* TRACKS CSS */
+.tracks{
+    margin-left: 16px;
+    margin-top: 32px;
+}
+
+.tracks ul{
+    list-style-type: none;
+    text-align: center;
+    padding-right: 16px;
+}
+
+.tracks li{
+    padding-top: 8px;
+}
+
+.tracks .img-track img{
+    max-width: 180px;
+}
+
+.tracks .title a{
+    color: white;
+    font-weight: 600;
+}
+
+.tracks .artist a{
+    color: rgb(175, 175, 175);
+}
+
+/* MADE FOR YOU */
+.made-for-you h5{
+    color: rgb(175, 175, 175);
+}
+
+/* POPULAR ARTIST */
+.popular img{
+    border-radius: 50%;
+}
+
+.popular{
+    margin-bottom: 200px;
+}
 
 /* FOOTER SECTION */
 footer {
     width: 100%;
     height: var(--footer-height);
-    background: #57575777;
+    background: #474747;
     color: white;
 }
 
@@ -83,7 +148,7 @@ footer i{
 
 /* FOOTER LEFT */
 .footer-left{
-    width: 25%;
+    width: 200px;
 }
 
 .play-now-text h5{
@@ -106,10 +171,11 @@ footer i{
 }
 
 
+
 /* FOOTER CENTER */
 
 .footer-center{
-    width: 50%;
+    width: 40%;
 }
 
 .media-playback{
@@ -128,12 +194,6 @@ footer i{
 	border-radius: 15px;
 }
 
-.volume{
-    height: 5px;
-	width: 100px;
-	background: linear-gradient(90deg, rgba(153,153,153,1) 35%, rgba(78,78,78,1) 35%);
-	border-radius: 15px;
-}
 
 .footer-center span{
     font-size: 0.6rem;
@@ -142,10 +202,21 @@ footer i{
 
 /* FOOTER RIGHT */
 .footer-right{
-    width: 25%;
+    width: 200px;
     justify-content: flex-end;
 }
 
 .footer-right a{
     margin-right: 8px;
+}
+
+.volume{
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(153,153,153,1) 35%, rgba(78,78,78,1) 35%);
+    border-radius: 15px;
+}
+
+#volume-bar{
+    width: 50%;
 }
