@@ -13,25 +13,73 @@
     <body>
 
         <!-- NAV BAR -->
-        <nav>
+        <nav class="d-flex flex-column">
+
+            <!-- TOP NAV BAR -->
+            <div class="top-nav">
 
             <!-- LOGO -->
-            <div class="logo">
-                <img src="./img/logo.svg" alt="logo">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+
+                <div class="menu">
+                    <div class="home d-flex flex-align-center">
+                        <img src="./img/home.svg" alt="home">
+                        <span>Home</span>
+                    </div>
+                    <div class="search d-flex flex-align-center"">
+                        <img src="./img/search.svg" alt="search">
+                        <span>Cerca</span>
+                    </div>
+                    <div class="library d-flex flex-align-center"">
+                        <img src="./img/libreria.svg" alt="library">
+                        <span>Libreria</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="menu">
-                <div class="home d-flex flex-align-center">
-                    <img src="./img/home.svg" alt="home">
-                    <span>Home</span>
+            <!-- MID NAV BAR -->
+
+            <div class="mid-nav">
+                <h4>PLAYLIST</h4>
+                <div class="new-playlist my-16">
+                    <i class="fas fa-plus"></i>
+                    <span>Crea Playlist</span>
                 </div>
-                <div class="search d-flex flex-align-center"">
-                    <img src="./img/search.svg" alt="search">
-                    <span>Cerca</span>
+
+                <div class="playlist-name">
+                    <ul>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
                 </div>
-                <div class="library d-flex flex-align-center"">
-                    <img src="./img/libreria.svg" alt="library">
-                    <span>Libreria</span>
+            </div>
+
+            
+            <!-- BOT NAV BAR -->
+            <div class="bot-nav">
+
+                <div class="download-app d-flex">
+                    <img src="./img/download.svg" alt="download">
+                    <span>Installa app</span>
+                </div>
+
+                <hr>
+
+                <div class="user d-flex flex-align-center">
+                    <img src="./img/profile.svg" alt="player">
+                    <span>John Doe</span>
                 </div>
             </div>
 
