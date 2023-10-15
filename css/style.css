@@ -26,6 +26,13 @@ a{
     text-decoration: none;
 }
 
+span:hover{
+    color: white;
+}
+
+li:hover{
+    color: white;
+}
 
 /* NAV SECTION */
 nav {
@@ -146,7 +153,12 @@ main {
     padding: 10px;
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 30px;
+}
+
+.premium-banner a:hover{
+    transform: scale(1.2);
+
 }
 
 /* SPOTIFY CATEGORIES CSS */
@@ -154,7 +166,7 @@ main {
     margin-top: 100px;
     margin-bottom: 50px;
     width: 100%;
-    height: 50px;
+    height: 80px;
     background-color: #141922;
 }
 
@@ -269,7 +281,8 @@ footer i{
 
 /* FOOTER LEFT */
 .footer-left{
-    width: 200px;
+    width: 25%;
+    min-width: 80px;
 }
 
 .play-now-text h5{
@@ -297,6 +310,7 @@ footer i{
 
 .footer-center{
     width: calc(100% - 400px);
+    min-width: 150px;
 }
 
 .media-playback{
@@ -304,18 +318,41 @@ footer i{
     margin-bottom: 8px;
 }
 
+.media-playback a:hover{
+    transform: scale(1.2);
+}
+
 #status-bar{
     width: 80%;
+    position: relative;
+}
+
+.status-pointer{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 8px;
+    position: absolute;
+    left: 35%;
+    display: none;
+}
+
+#status-bar:hover .status-pointer{
+    display: block;
 }
 
 .status{
     height: 5px;
-	width: 50%;
+	width: 100%;
 	background: linear-gradient(90deg, rgba(153,153,153,1) 35%, rgba(78,78,78,1) 35%);
 	border-radius: 15px;
+    margin: 0 8px;
 }
 
-
+.status:hover{
+    background: linear-gradient(90deg, rgb(44, 202, 24) 35%, rgba(78,78,78,1) 35%);
+}
 .footer-center span{
     font-size: 0.6rem;
     font-weight: 800;
@@ -323,7 +360,8 @@ footer i{
 
 /* FOOTER RIGHT */
 .footer-right{
-    width: 200px;
+    width: 25%;
+    min-width: 100px;
     justify-content: flex-end;
 }
 
@@ -338,8 +376,29 @@ footer i{
     border-radius: 15px;
 }
 
+.volume-pointer{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 8px;
+    position: absolute;
+    top: -5px;
+    left: 25%;
+    display: none;
+}
+
+.volume:hover{
+    background: linear-gradient(90deg, rgb(44, 202, 24) 35%, rgba(78,78,78,1) 35%);
+}
+
+#volume-bar:hover .volume-pointer{
+    display: block;
+}
+
 #volume-bar{
     width: 50%;
+    position: relative;
 }
 
 
@@ -357,6 +416,8 @@ footer i{
     :root{
         --navbar-width: 3rem;
     }
+
+
 
     #nav-bar{
         justify-content: space-between;
@@ -380,5 +441,15 @@ footer i{
     nav .mid-nav{
         display: none;
     }
+
+    nav .bot-nav{
+        margin-left: 32px;
+    }
+
+    nav hr{
+        display: none;
+    }
+
+    
 
 }
